@@ -6,11 +6,11 @@ function store_previous_directory() {
 
 function zen_alias() {
   if [ -n "$PREVIOUS_ALIAS_DIR" ] && ! is_subdirectory "$PWD" "$PREVIOUS_ALIAS_DIR" ; then
-    aliases="$PREVIOUS_ALIAS_DIR/.aliases"
+    zen_aliases="$PREVIOUS_ALIAS_DIR/.aliases"
 
     while IFS=':' read -r key value || [ -n "$key" ]; do
       unalias "$key" > /dev/null 2>&1
-    done < $aliases
+    done < $zen_aliases
 
     unset PREVIOUS_ALIAS_DIR
     echo "zen aliases unloaded"
