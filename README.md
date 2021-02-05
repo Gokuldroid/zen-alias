@@ -104,5 +104,5 @@ we might want to execute some script as soon as we enter the project. like updat
 
 define a zen-alias like this,
 ```bash
-init_zen_dir : nvm use && rvm use
+init_zen_dir: nvm use && rvm use
 ```
