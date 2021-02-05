@@ -1,8 +1,7 @@
 # Zen alias
 Local alias done correctly
 
-Aim: we can configure aliases very easily in bash or zsh. but those aliases are global to all directory. sometimes we need aliases or commands only for some directories alone. this plugin makes the process easy.
-
+We can configure aliases very easily in bash or zsh. but those aliases are global to all directory. sometimes we need aliases or commands only for some directories alone. this plugin makes the process easy. those aliases will be available only to that particular directory. aliases will be loaded when you `cd` into the directory and unloaded once you leave the directory.
 <br>
 
 ### Configure in zsh
