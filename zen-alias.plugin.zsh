@@ -45,3 +45,7 @@ function cd() {
   builtin cd "$@"
   zen_alias
 }
+
+function update_zen_alias() {
+  (cd ~/.oh-my-zsh/plugins/zen-alias && git pull)
+}
