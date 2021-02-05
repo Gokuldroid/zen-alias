@@ -4,6 +4,7 @@ Local alias done correctly
 Aim: we can configure aliases very easily in bash or zsh. but those aliases are global to all directory. sometimes we need aliases or commands only for some directories alone. this plugin makes the process easy.
 
 <br>
+
 ### Configure in zsh
 ------------
 
@@ -47,6 +48,7 @@ updating the plugin
 cd <cloned directory> && git pull
 ```
 <br>
+
 ### Configure in bash
 -----
 
@@ -65,6 +67,7 @@ add this line at the end of the bashrc
 source ~/.zen-alias.bash
 ```
 <br>
+
 ### Aliases syntax
 -----
 
@@ -91,6 +94,8 @@ touch .gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 echo ".aliases" > ~/.gitignore_global
 ```
+
+<br>
 
 #### Init command for a directory.
 ---
