@@ -23,7 +23,7 @@ function zen_alias() {
 
     echo "zen aliases loaded"
   fi
-  execute_init_zen_dir()
+  execute_init_zen_dir
 }
 
 function execute_init_zen_dir() {
