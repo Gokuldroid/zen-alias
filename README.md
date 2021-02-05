@@ -63,3 +63,14 @@ add this line at the end of the bashrc
 ```bash
 source ~/.zen-alias.bash
 ```
+
+### Excluding the .aliases file in git tree
+
+incase if you don't want others to use your aliases, you can add it global .gitignore or project .gitignore
+
+```bash
+cd ~
+touch .gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+echo ".aliases" > ~/.gitignore_global
+```
