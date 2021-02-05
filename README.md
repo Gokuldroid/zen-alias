@@ -71,7 +71,7 @@ source ~/.zen-alias.bash
 ### Aliases syntax
 -----
 
-Create *.aliases* file in the root directory of the project. add your per project aliases like this.
+Create *.aliases* file in the root directory of the project. add your per project aliases like this. You can find a sample file [here](https://github.com/Gokuldroid/zen-alias/blob/main/.aliases).
 
 ```
 yc: yarn w @zen-alias/client
