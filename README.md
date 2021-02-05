@@ -82,7 +82,8 @@ yb: yarn build
 yw: yarn watch
 ```
 <br>
-## Tips:
+
+### Tips
 
 #### Excluding the .aliases file in git tree
 ----
