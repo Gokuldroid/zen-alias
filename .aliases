@@ -1,0 +1,3 @@
+gc: git commit -m
+gp: git push
+ga: git add .
