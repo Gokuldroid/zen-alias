@@ -18,16 +18,14 @@ function zen_alias() {
 
   if [ -e .aliases ]; then
     while IFS=':' read -r key value || [ -n "$key" ]; do
+      if [[ "$key" == "init_zen_dir" ]]; then
+        eval $value
+      fi
       alias "$key"="${value##*( )}"
     done < ".aliases"
 
     echo "zen aliases loaded"
   fi
-  execute_init_zen_dir
-}
-
-function execute_init_zen_dir() {
-  alias init_zen_dir >/dev/null 2>&1 && init_zen_dir
 }
 
 function is_subdirectory() {
